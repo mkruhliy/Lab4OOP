@@ -7,6 +7,7 @@ public class ElfKick implements BasicKick{
     public void kick(Character whoKick, Character whoKicked) {
         if (whoKicked.getPower()<whoKick.getPower())
             whoKicked.setHp(0);
-        whoKick.setPower(whoKick.getPower()-1);
+        else
+            whoKick.setPower(whoKick.getPower()-1);
     }
 }

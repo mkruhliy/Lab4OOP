@@ -20,8 +20,4 @@ public class CharacterFactory {
         Class cls = (Class) subTypes.toArray()[new Random().nextInt(subTypes.size())];
         return (Character) cls.getDeclaredConstructor().newInstance();
     }
-
-    public static void main(String[] args) {
-        System.out.println(new CharacterFactory().createCharacter());
-    }
 }
